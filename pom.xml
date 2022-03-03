@@ -21,7 +21,7 @@
 		<sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
 		<sonar.sonar.dynamicAnalysis>reuseReports</sonar.sonar.dynamicAnalysis>
 		<coverage.threshold>0.9</coverage.threshold>
-		<jacoco.fail-coverage>false</jacoco.fail-coverage>
+		<jacoco.fail-coverage>true</jacoco.fail-coverage>
 		<jacoco-plugin.version>0.8.6</jacoco-plugin.version>
 	</properties>
 

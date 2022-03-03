@@ -65,8 +65,45 @@
 							<goal>report</goal>
 						</goals>
 						<configuration>
+							<haltOnFailure>${jacoco.fail-coverage}</haltOnFailure>
+							<rules>
+								<rule>
+									<element>CLASS</element>
+									<limits>
+										<limit>
+											<counter>INSTRUCTION</counter>
+											<value>COVEREDRATIO</value>
+											<minimum>${coverage.threshold}</minimum>
+										</limit>
+										<limit>
+											<counter>CLASS</counter>
+											<value>COVEREDRATIO</value>
+											<minimum>${coverage.threshold}</minimum>
+										</limit>
+										<limit>
+											<counter>METHOD</counter>
+											<value>COVEREDRATIO</value>
+											<minimum>${coverage.threshold}</minimum>
+										</limit>
+										<limit>
+											<counter>BRANCH</counter>
+											<value>COVEREDRATIO</value>
+											<minimum>${coverage.threshold}</minimum>
+										</limit>
+										<limit>
+											<counter>COMPLEXITY</counter>
+											<value>COVEREDRATIO</value>
+											<minimum>${coverage.threshold}</minimum>
+										</limit>
+										<limit>
+											<counter>LINE</counter>
+											<value>COVEREDRATIO</value>
+											<minimum>${coverage.threshold}</minimum>
+										</limit>
+									</limits>
+								</rule>
+							</rules>
 							<!-- Sets the path to the file which contains the execution data. -->
-
 							<dataFile>target/jacoco.exec</dataFile>
 							<!-- Sets the output directory for the code coverage report. -->
 							<outputDirectory>target/my-reports</outputDirectory>

@@ -66,6 +66,8 @@
 						</goals>
 						<configuration>
 							<haltOnFailure>${jacoco.fail-coverage}</haltOnFailure>
+							<dataFile>target/jacoco.exec</dataFile>
+							<destFile>target/jacoco.exec</destFile>
 							<rules>
 								<rule>
 									<element>CLASS</element>
@@ -104,17 +106,12 @@
 								</rule>
 							</rules>
 							<!-- Sets the path to the file which contains the execution data. -->
-							<dataFile>target/jacoco.exec</dataFile>
+							
 							<!-- Sets the output directory for the code coverage report. -->
 							<outputDirectory>target/my-reports</outputDirectory>
 						</configuration>
 					</execution>
 				</executions>
-				<configuration>
-					<systemPropertyVariables>
-						<jacoco-agent.destfile>target/jacoco.exec</jacoco-agent.destfile>
-					</systemPropertyVariables>
-				</configuration>
 			</plugin>
 		</plugins>
 	</build>

@@ -17,7 +17,7 @@
         	<maven.compiler.target>1.8</maven.compiler.target>
 		<sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
 		<sonar.language>java</sonar.language>
-		<ssonar.coverage.jacoco.xmlReportPaths>${project.basedir}/target/jacoco.exec</sonar.coverage.jacoco.xmlReportPaths>
+		<sonar.coverage.jacoco.xmlReportPaths>${project.basedir}/target/jacoco.exec</sonar.coverage.jacoco.xmlReportPaths>
 		<sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
 		<sonar.sonar.dynamicAnalysis>reuseReports</sonar.sonar.dynamicAnalysis>
 		<coverage.threshold>0.75</coverage.threshold>

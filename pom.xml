@@ -65,7 +65,6 @@
 							<goal>report</goal>
 						</goals>
 						<configuration>
-							<haltOnFailure>${jacoco.fail-coverage}</haltOnFailure>
 							<dataFile>target/jacoco.exec</dataFile>
 							<destFile>target/jacoco.exec</destFile>
 							<rules>
